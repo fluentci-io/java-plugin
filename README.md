@@ -25,7 +25,7 @@ Github Actions:
   uses: fluentci-io/setup-fluentci@v5
   with:
     wasm: true
-    pipeline: .
+    plugin: java
     args: |
       setup zulu-17.46.19
     working-directory: example
