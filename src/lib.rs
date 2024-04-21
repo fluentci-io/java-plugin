@@ -22,7 +22,7 @@ pub fn setup(version: String) -> FnResult<String> {
     let stdout = dag()
         .mise()?
         .with_exec(vec!["mise", "install", &format!("java{}", version)])?
-        .with_exec(vec!["mise", "use", "-g", "java"])?
+        .with_exec(vec!["mise", "use", "-g", &format!("java{}", version)])?
         .stdout()?;
     Ok(stdout)
 }
