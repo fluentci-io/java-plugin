@@ -32,7 +32,7 @@ use fluentci_pdk::dag;
 
 // ...
 
-dag().call("https://pkg.fluentci.io/java@v0.1.2", "setup", vec!["zulu-17.46.19"])?;
+dag().call("https://pkg.fluentci.io/java@v0.1.2?wasm=1", "setup", vec!["zulu-17.46.19"])?;
 ```
 
 ## 📚 Examples
