@@ -16,6 +16,25 @@ fluentci run --wasm java setup zulu-17.46.19 # or any other version
 | ----- | ------------------------------------ |
 | setup | Installs a specific version of Java. |
 
+## Code Usage
+
+Add `fluentci-pdk` crate to your `Cargo.toml`:
+
+```toml
+[dependencies]
+fluentci-pdk = "0.1.9"
+```
+
+Use the following code to call the plugin:
+
+```rust
+use fluentci_pdk::dag;
+
+// ...
+
+dag().call("https://pkg.fluentci.io/java@v0.1.2", "setup", vec!["zulu-17.46.19"])?;
+```
+
 ## 📚 Examples
 
 Github Actions:
