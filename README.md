@@ -49,7 +49,6 @@ Github Actions:
     plugin: java
     args: |
       setup zulu-17.46.19
-    working-directory: example
 - name: Show Java version
   run: |
     export PATH=${HOME}/.local/share/mise/shims:${PATH}
