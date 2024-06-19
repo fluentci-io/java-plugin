@@ -1,5 +1,6 @@
 # Java Plugin
 
+[![fluentci pipeline](https://shield.fluentci.io/x/java)](https://pkg.fluentci.io/java)
 [![ci](https://github.com/fluentci-io/java-plugin/actions/workflows/ci.yml/badge.svg)](https://github.com/fluentci-io/java-plugin/actions/workflows/ci.yml)
 
 This plugin sets up your CI/CD pipeline with a specific version of Java.
